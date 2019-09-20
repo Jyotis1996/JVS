@@ -1,0 +1,15 @@
+button {
+	padding: 10px 10px;
+	cursor: pointer;
+	color: Black;
+	background-color: #ffbb33;
+	border-radius: 5px;
+	border: none;
+}
+
+.div1
+{
+padding:80px;
+align:"center";
+padding-left: 500px;
+}

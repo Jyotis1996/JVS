@@ -1,0 +1,4 @@
+101,ram,ram123,Admin
+102,richie,rich123,Employee
+103,john,dsouza123,Manager
+104,abc,abc123,Employee

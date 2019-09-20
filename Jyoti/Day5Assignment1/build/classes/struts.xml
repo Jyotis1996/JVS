@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="LoginForm" type="com.assignment1.bean.LoginBean" />
+		<form-bean name="UserListForm"
+			type="com.assignment1.bean.UserListBean" />
+		<form-bean name="SearchForm"
+			type="com.assignment1.bean.UserListBean" />
+		<form-bean name="OperationForm"
+			type="com.assignment1.bean.OperationBean" />
+		<form-bean name="RegisterForm"
+			type="com.assignment1.bean.RegisterUserBean" />
+
+	</form-beans>
+
+
+	<action-mappings>
+
+		<action name="LoginForm" path="/LoginAction"
+			type="com.assignment1.action.LoginAction" input="/JSP/Login.jsp"
+			validate="true" scope="request">
+			<forward name="failure" path="/JSP/Login.jsp" />
+			<forward name="success" path="/userList.do" redirect="true" />
+		</action>
+
+		<action name="UserListForm" path="/userList"
+			type="com.assignment1.action.UserListAction" input="/JSP/userList.jsp"
+			scope="request" validate="false">
+			<forward name="showData" path="/JSP/userList.jsp" />
+		</action>
+
+		<!-- Search Click -->
+
+		<action name="SearchForm" path="/SearchAction"
+			type="com.assignment1.action.SearchAction" input="/JSP/userList.jsp"
+			scope="request" validate="false">
+			<forward name="setAllList" path="/JSP/userList.jsp"></forward>
+		</action>
+
+		<!-- Localization -->
+		<action path="/Locale"
+			type="com.assignment1.Localization.LocalizationAction"
+			name="LoginForm" parameter="method" validate="false">
+			<forward name="success" path="/JSP/Login.jsp" />
+		</action>
+
+
+		<!-- Button Clicks -->
+
+		<action path="/operation" name="UserListForm"
+			type="com.assignment1.action.OperationAction" scope="request">
+			<forward name="update" path="/JSP/UpdateUserDetails.jsp"></forward>
+			<forward name="details" path="/JSP/DisplayUser.jsp"></forward>
+			<forward name="delete" path="/JSP/DeleteDetails.jsp"></forward>
+			<forward name="register" path="/JSP/RegisterUser.jsp"></forward>
+		</action>
+
+		<action path="/updateDetails" name="OperationForm"
+			type="com.assignment1.action.UpdateUserAction"
+			scope="request" validate="true" input="/JSP/UpdateUserDetails.jsp">
+			<forward name="update" path="/JSP/userList.jsp"></forward>
+		</action>
+		<action path="/deleteDetails" name="UserListForm"
+			type="com.assignment1.action.DeleteUserAction"
+			scope="request">
+			<forward name="delete" path="/JSP/userList.jsp"></forward>
+		</action>
+		<action path="/registerUser" name="RegisterForm"
+			type="com.assignment1.action.RegisterUserAction"
+			scope="request" validate="true" input="/JSP/RegisterUser.jsp">
+			<forward name="register" path="/JSP/userList.jsp"></forward>
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="com.assignment1.message" />
+
+</struts-config>

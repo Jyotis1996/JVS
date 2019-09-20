@@ -1,0 +1,21 @@
+#drag
+{
+    height:100px;
+    width:100px;
+    background-color:blue;
+    display:inline-block;
+    text-align: center;
+    margin:30px;
+}
+#drop
+{
+	float:right;
+    width:200px;
+    height:200px;
+    background-color:#f56cf5;
+    display: inline-block;
+    text-align: center;
+	padding :20px;
+	right:0;
+}
+

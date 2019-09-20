@@ -1,0 +1,48 @@
+<!--Assignment 2.3 : CanvasGradients.html
+@author name : Jyoti Shirahatti
+@created date : 05/08/2019-->
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+    <h2>HTML5 Canvas Gradient</h2>
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+</center>
+
+<script>
+	var c = document.getElementById("myCanvas");
+	var can = c.getContext("2d");
+
+	// Create gradient
+	var grd = can.createLinearGradient(0,0,0,280);
+	grd.addColorStop(0,"skyblue");
+	grd.addColorStop(0.5,"white");
+	grd.addColorStop(0.5,"Green");
+	grd.addColorStop(1,"white");
+
+	// Fill with gradient
+	can.fillStyle = grd;
+	can.fillRect(25,25,250,250);
+
+	// draw path on rectangle
+	can.beginPath();
+	can.moveTo(100, 100);
+	can.lineTo(100, 180);
+	can.stroke();
+  
+	// draw 2nd line
+	can.beginPath();
+	can.moveTo(100, 100);
+	can.lineTo(180, 100);
+	can.stroke();
+  
+	// draw 3rd line
+	can.beginPath();
+	can.moveTo(180, 100);
+	can.lineTo(180, 180);
+	can.stroke();
+</script>
+
+</body>
+</html>

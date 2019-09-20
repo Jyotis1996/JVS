@@ -1,0 +1,35 @@
+<!--Assignment 1 : AudioPlayer.html
+@author name : Jyoti Shirahatti
+@created date : 06/08/2019-->
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+            button {
+	           padding: 10px 10px;
+	           cursor: pointer;
+			   color: Black;
+			   background-color: #ffbb33;
+			   border-radius: 5px;
+	           border: none;
+            }  
+     </style>
+	 
+	 
+</head>
+<body>
+<center>
+	<h2>Audio Player</h2>
+	    <!-- Audio controls-->
+		<audio controls id="audio">
+		<source src="Water.mp3" type="audio/mp3">
+		</audio>
+		<br>
+        <button onclick="playAud()" type="button">Play</button>
+        <button onclick="pauseAud()" type="button">Pause</button>
+        <button onclick="volUp()" type="button">Vol+</button>
+        <button onclick="volDown()" type="button">Vol-</button><br>
+</center>
+<script src="Audio.js"></script>
+</body>
+</html>

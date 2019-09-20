@@ -1,0 +1,184 @@
+<!--Assignment 3 : UserDetail.html
+@author name : Jyoti Shirahatti
+@created date : 06/08/2019-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Details</title>
+<link rel="stylesheet" type="text/css" href="UserDetails.css">
+<script src="js/validation.js"></script>
+</head>
+<body>
+		<center >
+				<form name = "registration" action="success.html" onsubmit="return(validate());">
+				  <!-- outer div start -->
+				  <div id="outer" >
+					<br>
+
+					
+					<!-- inner div start -->
+					<div id="inner" style="border: 1px solid black;">
+					  <br>
+					  <!-- personal details -->
+					  <!-- table start -->
+					  <table id="tab1" >
+						<thead>
+						  <th colspan="2" style="background-color: black">
+							<label style="color:white;float:left;"><b>&nbsp&nbsp&nbspPersonal details&nbsp&nbsp&nbsp&nbsp</b></label>
+						  </th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>
+							  <label><b>Salutation</b></label>
+							</td>
+							<td>
+							  <!-- datalist -->
+							  <select id="salutation" >
+								<option value="Mr.">Mr</option>
+								<option value="Ms.">Ms</option>
+								<option value="Mrs.">Mrs</option>
+							  </datalist>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>First Name</b><sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="text" name="first_name" id="first_name" required="true" maxlength="50" 
+							  placeholder = "Enter First Name" pattern="[A-Za-z]{1,50]">
+							  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Middle Name</b></label>
+							</td>
+							<td>
+							  <input type="text" name="middle_name" id="middle_name"  maxlength="50" 
+							  placeholder = "Enter Middle name"pattern="[A-Za-z]{1,50]">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Last Name</b><sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="text" name="last_name" id="last_name" required="true" maxlength="50" 
+							  placeholder = "Enter Last Name" pattern="[A-Za-z]{1,50]">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Sex</b><sup>*</sup>
+							  </label>
+							</td>
+							<td >
+							  <input type="radio" id= "myRadio" name="gender" required="true" value="Male"><label>Male</label>
+							  <input type="radio" id= "myRadio" name="gender" required="true" value="Female"><label>Female</label></td>
+						  </tr>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Email&nbsp&nbsp</b><sup>*</sup></label>
+							</td>
+							<td>
+							  <input type="email" name="email" id="email" required="true" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" 
+							  title="Invalid email address" placeholder = "Example: xyz@gmail.com">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Birth Date</b><sup>*</sup> 
+							  </label>
+							</td>
+							<td>
+							  <input type="date" name="bdate" id="birth_date" required="true" format="dd/mm/yyyy">
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+							  <label><b>Address</b></label>
+							</td>
+							<td>
+							  <textarea name="address" id="address" maxlength="100"></textarea>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <!-- table 1st end -->
+					  <!-- Areas of Interest  -->
+					  <table>
+						<thead>
+						  <th colspan="2" style="background-color: black">
+							<label style="color:white;float:left;"><b>&nbsp&nbsp&nbspAreas of Interest</b><span style="color: red;">*</span> </label>
+						  </th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="web" value="Web Programming" id="web" >
+							  <label>Web Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="database" value="Database Programming" id = "database">
+							  <label>Database Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="swing" value="Swing Programming" id= "swing">
+							  <label>Swing Programming</label>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="color:white;float:left;"><input type="checkbox" name="mobile" value="Mobile Programming" id = "mobile">
+							  <label>Mobile Programming</label>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <table style = "width:300px">
+						<thead>
+						  <th colspan="2" style="background-color: black"><label style="color:white;float:left;"><b>Other Interest</b></label></th>
+						</thead>
+						<tbody>
+						  <tr>
+							<td >
+							  <!-- perform eevnt drag and drop -->
+							  <ul ondrop="drop(event)" ondragover="allowDrop(event)" id="drop">
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag">Travelling</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag1">Photography</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag2">Calligraphy</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag3">Reading Books</li>
+								<li draggable="true" ondragstart="drag(event)"  ondragover="allowDrop(event)" id="drag4">Trekking</li>
+							  </ul>
+							</td>
+							<td>
+							  <ul ondrop="drop(event)" ondragover="allowDrop(event)" id="drop1">
+							  </ul>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <!-- table 2nd end -->
+					
+					<br>
+					<div style="text-align: center;border: none">
+					  <button type="submit" value="Login" class="button"><b>submit</b></button>
+					  <!-- to clear all the values -->
+					  &nbsp&nbsp&nbsp&nbsp<button type="reset" name="Clear" value="Clear"><b>Clear</b></button>
+					</div>
+				</div>
+				<!-- inner div end -->
+					<br>
+				  </div>
+				  <!-- outer div end -->
+				</form>
+			  </center>
+</body>
+</html>

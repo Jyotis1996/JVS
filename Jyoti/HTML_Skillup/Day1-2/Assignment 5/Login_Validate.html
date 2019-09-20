@@ -1,0 +1,96 @@
+<!-- Assignment No 4 :Login.html
+@Author : Jyoti
+@Created Date : 30/7/2019
+-->
+<!-- Login form designed using external css and javascript validation-->
+<html>
+<head>
+    <title> Login Page </title>
+    <link rel="stylesheet" type="text/css" href="LoginCSS.css">
+
+    <script type="text/javascript">
+    /**
+	Method Name : validateForm()
+	Description : validateForm() method used to validate login form on the basis of username,password,submit button,clear button
+	*/
+    function validateForm() 
+    {
+        var uname = document.forms["myForm"]["ID"].value;
+        var pass = document.forms["myForm"]["pswd"].value;
+        if (uname == "")
+        {
+           alert("Please Enter Login Id");
+           return false;
+        }
+		
+        else if (pass == "")
+        {
+           alert("Please Enter password");
+           return false;
+        }
+		
+        else if(uname!=="admin" && pass!=="admin123")
+        {
+	       alert("Invalid Login Id & Password");
+           return false;
+        }
+		
+        else
+        {
+           alert("Successfully Login...");
+           return false;
+        }
+    }
+</script>
+
+</head>
+<body style="background-color:yellow;">
+
+
+     <form name="myForm" onsubmit="return validateForm()" method="post">
+	    
+           <div >
+		   <table border = 1 style="background-color:white;">
+			  <tr>
+			    <td style="height:100px;padding: 15px;">
+                <table >
+                   <caption>
+                      <h2>
+                      <label for="login_details" style="width:40%">Login Details</label></h2><br>
+                   <caption>
+
+                   <tr>
+                      <td>
+                      <label for="login_id" style="width:60%">Login ID</label>
+                      </td>
+                
+				      <td>
+                      <input type="text" id="txt1" name="ID" autofocus><br>
+                      </td>
+                   </tr>
+
+                   <tr>
+                      <td>
+                      <label for="password">Password</label>
+                      </td>
+
+                      <td>
+                      <input type="password" id="txt2" name="pswd"><br>
+                      </td>
+                   </tr>
+
+                </table>
+				
+                <table class="table2">
+                    <tr align="center">
+                       <td colspan="3">
+                       <input class  = "button" type="submit" value="Submit" size=50">&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input class  = "button" type="reset" value="Clear">
+                       </td>
+                    </tr>
+                </table>
+				</td></tr></table>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+101,Ram Sharma,kolhapur ,maharashtra,10300,9096219696
+102,Richie Rich,mumbai,Maharshtra,20000,7776819452
+103,John Dsouza,ahemdabad,gujrat,30000,9767109868
+104,Abc Xyz,pune,Maharashtra,10300,9858764512

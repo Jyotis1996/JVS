@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="default" extends="struts-default">
+		<interceptors>
+			<interceptor name="session" class="Assignment2.Login.interceptor.LoginInterceptor" />
+			<interceptor-stack name="sessionExpirayStack">
+   			 <interceptor-ref name="defaultStack"/>
+   			 <interceptor-ref name="session"/>
+   			</interceptor-stack>
+		</interceptors>
+
+		<action name="LoginAction" class="Assignment2.Login.action.LoginAction">
+			<result name="SUCCESS">/success.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="ERROR">/login.jsp</result>
+			<result name="allUser">/login.jsp</result>
+		</action>
+		<action name="logOut" class="Assignment2.Login.action.LoginAction" method="logOut">
+			<result name="success">/login.jsp</result>
+		</action>
+	</package>
+</struts>

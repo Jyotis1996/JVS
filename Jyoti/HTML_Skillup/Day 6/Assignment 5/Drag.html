@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="DragandDropcss.css">
+<script>
+//This is done by calling the event.preventDefault() method for the ondragover event
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+//set dragging data
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  /*Get the dragged data with the dataTransfer.getData() method. 
+  This method will return any data that was set to the same type in the setData() method */
+  var data = ev.dataTransfer.getData("text");
+  //data to drop
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<center>
+            <h2>HTML5 Drag An Drop</h2>
+            <div ondragstart="drag(event)"  ondragover="allowDrop(event)" draggable="true" id="drag">		 
+                <label style="color: white;display:inline-block;">Drag me</label>
+            </div>
+            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" >
+                <label >Dustbin</label>
+            </div>
+    </center>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+
+font{
+	color : #800080;
+}
+
+b{
+	color : #C71585
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid white ;
+}
+
+html { 
+  background: url(background.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+.table1 {
+	animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: #00ffff;}
+  to {background-color: #ccffcc;}
+}

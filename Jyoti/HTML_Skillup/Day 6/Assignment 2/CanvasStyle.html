@@ -1,0 +1,37 @@
+<!--Assignment 2.4 : CanvasStyle.html
+@author name : Jyoti Shirahatti
+@created date : 05/08/2019-->
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+    <h2>HTML5 Canvas Style and Color</h2>
+    <canvas id="myCanvas" width="300" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</center>
+<!-- Javascript code to draw arc in brown color-->
+<script type="text/javascript">
+      var canvas = document.getElementById('myCanvas');
+      if (canvas.getContext) {
+        // use getContext to use the canvas for 2d drawing
+        var can = canvas.getContext('2d');
+        var c = document.getElementById("myCanvas");
+        for (var i = 0; i <= 12; i++) {
+          for (var j = 0; j <= 10; j++) {
+            //reset path
+            can.beginPath();
+            // ploting arc 
+            can.arc((10 * j) + 20 * j, (5 * i) + 20 * i, 10, 10.5, 5 * Math.PI);
+            //change color to brown
+            can.strokeStyle = "brown";
+            // draw arc
+            can.stroke();
+          }
+        }
+      }
+    </script>
+
+</body>
+</html>

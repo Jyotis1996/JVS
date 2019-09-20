@@ -1,0 +1,33 @@
+div
+{
+padding:80px;
+align:"center";
+padding-left: 500px;
+}
+
+.table1
+{
+align:"center";
+
+border:"2";
+padding:15px;
+border: 1px solid black;
+width: 30%;
+height: 15%;
+}
+
+.table2
+{
+align:"center";
+padding:15px;
+padding-left:60px;
+}
+label {
+color: #0000FF;
+}
+
+.button{
+	text-align: center;
+	margin: 5px 0;
+	background-color: #ffcccc;
+}

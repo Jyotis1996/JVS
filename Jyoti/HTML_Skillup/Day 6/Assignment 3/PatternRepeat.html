@@ -1,0 +1,36 @@
+<!--Assignment 3 : PatternRepeat.html
+@author name : Jyoti Shirahatti
+@created date : 05/08/2019-->
+<!DOCTYPE html utf-8>
+<html >
+<head>
+	<title>Canvas Pattern</title>
+   <meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+<body>
+	<center> <h1>HTML5 Canvas Pattern</h1>
+<img src="pattern.jpg" id="scarlines" width="10" height="10" hidden="">
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</center>
+<script>
+
+        var canvas = document.getElementById("myCanvas");
+        var can = canvas.getContext("2d");
+      
+        var img = document.getElementById("scarlines")
+        /*call after image is load*/
+        img.onload=function(){
+        /* create pattern*/
+        var pattren = can.createPattern(img, 'repeat');
+        /*create rectangle*/
+        can.rect(0, 0, 300, 300);
+        /*assign pattern to rectangle*/
+        can.fillStyle = pattren;
+        /* fill recangle with pattern*/
+        can.fill();
+         }
+      </script>
+</body>
+</html>

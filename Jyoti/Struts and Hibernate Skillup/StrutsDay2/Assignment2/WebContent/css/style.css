@@ -1,0 +1,329 @@
+.font {
+	font-family: Georgia;
+	color: #1A5276;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
+.abc {
+	padding-left: 5%;
+}
+
+.eMessage {
+	padding-right: 5%;
+	text-align: right;
+}
+
+.b_button {
+	margin-left: 100px;
+	max-width: 150px;
+	cursor: pointer;
+}
+
+.b_button:hover {
+	background-color: #D0D3D4;
+	border-color: #B3B6B7;
+}
+
+.screentitle {
+	font-size: 20px;
+	padding: 0px;
+	width: 80%;
+	text-decoration: none
+}
+
+hr {
+	color: #283747;
+	border: none;
+	height: 1px;
+	background-color: #283747;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	float: center;
+}
+
+.search {
+	border: 0px solid;
+	border-color: #979A9A;
+	margin-top: 5px;
+	width: 80%;
+	padding: 2% 0% 2% 0;
+	float: left;
+}
+
+.logout {
+	border: 0px solid;
+	border-color: #979A9A;
+	width: 28%;
+	padding: 2% 0%;
+	float: right;
+	margin-right: -16.5%;
+}
+
+.userListErrorMsg {
+	border: 0px solid;
+	border-color: #979A9A;
+	width: 50%;
+	padding: 2% 50%;
+	float: right;
+	/* 	margin-right: -51%; */
+}
+
+.goback {
+	border: 0px solid;
+	border-color: #979A9A;
+	width: 28%;
+	padding: 2% 0%;
+	float: left;
+	margin-left: -3%;
+}
+
+.logout1 {
+	float: right;
+}
+
+.dataList {
+	border: 0px solid;
+	border-color: #979A9A;
+	margin: 0 auto;
+	margin-top: 5px;
+	width: 100%;
+	padding: 2% 0%;
+}
+
+.login {
+	background-color: #F2F3F0;
+	margin: 3%;
+}
+
+.login-title {
+	border: 1px solid black;
+	border-color: #B3B6B7;
+	margin: 0 auto;
+	padding: 10px;
+	width: 90%;
+	text-align: center;
+	background-color: #D0D3D4;
+	margin: 0 auto;
+}
+
+.login-title1 {
+	border: 1px solid black;
+	border-color: #B3B6B7;
+	padding: 10px;
+	width: 90%;
+	text-align: left;
+	background-color: #D0D3D4;
+	margin: 0 auto;
+}
+
+.selectJsp {
+	width: 93%;
+}
+
+input[type="text"],input[type="password"],textarea {
+	width: 90%;
+	padding: 1px;
+}
+
+input[type="radio"] {
+	display: inline-block;
+	width: 15%;
+	padding: 1px;
+}
+
+.Salutation {
+	width: 92%;
+	padding: 1px;
+}
+
+.bdate {
+	width: 29%;
+	margin: 0 auto;
+	margin-right: 2%;
+	/* 	margin-left: 0.5px; */
+}
+
+.bdates {
+	width: 26%;
+	margin: 0 auto;
+}
+
+.bdates1 {
+	width: 31%;
+	margin: 0 auto;
+}
+
+.bdates2 {
+	width: 31%;
+	margin: 0 auto;
+}
+
+input[type="reset"],input[type="submit"] {
+	font-size: 15px;
+	margin: 10px 10px 0 33px;
+	padding: 2px 5px;
+	width: 30%
+}
+
+.button {
+	margin: 0 auto;
+	font-size: 15px;
+	/* 	margin: 10px 33px 0 33px; */
+	padding: 2px 5px;
+	width: 61%;
+	padding-left: 30%;
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #008CBA;
+}
+
+.button1 {
+	margin: 0 auto;
+	font-size: 15px;
+	/* 	margin: 10px 33px 0 33px; */
+	padding: 2px 5px;
+	width: 100%;
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #008CBA;
+}
+
+.tableRecord {
+	margin: 0 auto;
+	padding: 1% 10%;
+	width: 100%;
+}
+
+.tableRecord1 {
+	margin: 0 auto;
+	padding: 1% 1%;
+	width: 100%;
+}
+
+.editButton {
+	margin: 0 auto;
+	font-size: 15px;
+	/* 	margin: 10px 33px 0 33px; */
+	padding: 2px 5px;
+	width: 100%;
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #008CBA;
+}
+
+.warning {
+	color: #E74C3C;
+	text-align: right;
+	margin-left: 3px;
+}
+
+.success {
+	color: #229954;
+	text-align: right;
+	margin-left: 3px;
+}
+
+.data {
+	color: #5F6A6A;
+	text-align: right;
+	margin-left: 3px;
+}
+
+.login-form {
+	border: 1px solid;
+	border-color: #979A9A;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 65%;
+	padding: 3%;
+}
+
+.login-form1 {
+	border: 1px solid;
+	border-color: #979A9A;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 40%;
+	padding: 10% 2%;
+	padding-left: 5%
+}
+
+.form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form1 {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.field {
+	padding-left: 5%;
+	width: 30%;
+}
+
+.dataField {
+	padding: 1% 1%;
+	width: 100%;
+}
+
+.dataField1 {
+	text-align: left;
+	padding: 1% 2%;
+	width: 30%;
+}
+
+.dataField2 {
+	text-align: left;
+	padding: 1% 2%;
+	width: 10%;
+}
+
+.field1 {
+	padding-right: 5%;
+	width: 40%;
+	text-align: right;
+}
+
+.urlList {
+	padding-left: 5px;
+}
+
+.main {
+	font-family: serif;
+	background-color: #F2F3F4;
+	margin: 5%;
+	letter-spacing: 1px;
+	min-width: 600px;
+}
+
+.parent {
+	padding: 15px 15px 15px;
+}
+
+.content {
+	font: italic 12px serif;
+}
+
+.lcontent {
+	font: bold 1em 'Comic Sans M', serif;
+	padding-left: 10px;
+}
+
+.content1 {
+	font: italic 16px serif;
+}

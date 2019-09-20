@@ -1,0 +1,23 @@
+USERID,PASSWORD,SALUTATION,FIRSTNAME,MIDDLEINITIAL,LASTNAME,SEX,EMAILID,BIRTHDATE,ADDRESS,AREAOFINTEREST,OTHERINTEREST,
+ADI123456,ADI@12345,Mr.,Jim,J,Miller,Male,jyotishirahatti@gmail.com,1995-04-04,Ahmedabad,"Web Programming, Database Programming ",calligraphy
+ADI1235,ADI@12345,Mr.,John,J,Thomas,Male,john@gmail.com,1996-03-28,Ahmedabad,"Web Programming, Database Programming ",
+Admin112345,Admin@1234,Mr.,Richie,R,Rich,Male,richie@gmail.com,1990-01-01,Ahmedabad,"Web Programming, Database Programming, Swing Programming ",Chess
+admin12,admin12334,Ms.,Jyoti,M,Shirahatti,Female,jyotishirahatti@gmail.com,1996-06-28,Kolhapur,"Web Programming, Database Programming ",
+admin1232,admin@123,Mr.,Miller,M,mike,Male,miller@gmail.com,1990-01-01,italy,"Web Programming, Database Programming ",
+admin1234,admin1234,Ms.,ジョチ,M,シラハッチ,Female,jyotishirahatti@gmail.com,1996-06-28,コｌハプｒ,"Web Programming, Database Programming ",カッィｇラｐｈｙ
+Admin123451,admin@1234,Ms.,Jyoti,M,Shirahatti,Female,jyotishirahatti@gmail.com,1996-06-28,Kolhapur,"Web Programming, Database Programming ",gaming
+ASD123,Emp@12345,Mr.,laxmandas,d,Dharmana,Male,a@gmail.com,1990-01-01,コｌハプｒ,"Database Programming, Swing Programming ",コｌハプｒ
+empsdl1,Emp@12345,Mr.,ジョチ,ジョチ,ジョチ,Male,a@gmail.com,1991-04-01,ジョチsdfsdf,"Database Programming, Swing Programming ",ジョチ
+empsdl6,Emp@12345,Mr.,laxmandas,gfjgh,Dharmana,Male,a@gmail.com,1990-01-02,mabagam (vill & post)
+polaki,"Database Programming, Swing Programming ",sdgfdg
+J123456,Jyoti@12312,Ms.,Jyoti,,Shirahatti,Female,jyotishirahatti@gmail.com,1996-06-28,kolhapur,"Web Programming, Database Programming ",
+john123,john@123,Mr.,John,J,Thomson,Male,john@gmail.com,1995-05-25,アｈメダバｄ,"Web Programming, Database Programming ",calligraphy
+john1234,john@123,Mr.,John,J,Thomson,Male,john@gmail.com,1996-05-27,Ahmedabad,"Web Programming, Database Programming ",
+Jyoti123,jyoti@123,Ms.,Jyoti,M,Shirahatti,Female,jyotishirahatti@gmail.com,1996-06-28,Kolhapur,"Web Programming, Database Programming ",
+Jyoti1234,Jyoti@123,Ms.,Jyoti,M,シラハッチ,Female,jyotishirahatti@gmail.com,1996-06-28,コｌハプｒ,"Web Programming, Database Programming ",カィイｇラｐｈｙ
+jyoti12345678,Jyoti@123,Ms.,ジョチ,M,Shirahatti,Female,jyotishirahatti@gmail.com,1995-05-27,コｌハプｒ,"Web Programming, Database Programming, Swing Programming ",ガメｓ
+jyotis123,jyoti@123,Ms.,ジョチ,M,シラハッチ,Female,jyotishirahatti@gmail.com,1990-01-01,kolhapur,"Web Programming, Database Programming ",
+Rich123,admin@123,Mr.,Richie,R,Rich,Male,richie@gmail.com,1995-10-28,Ahmedabad,"Web Programming ",Calligraphy
+Richie12,Richie@123,Mr.,りちえ,r,rich,Male,richie@gmail.com,1999-02-20,Kolhapur,"Web Programming, Database Programming ",
+Richie12344,Richie@11233,Mr.,Richie,R,Rich,Male,richie@gmail.com,1996-04-20,Kolhapur,"Web Programming, Database Programming ",chess
+Roman1232,Roman@123,Mr.,Ram,M,Patil,Male,ram@gmail.com,1996-05-17,Kolhapur,"Web Programming, Database Programming ",Chess

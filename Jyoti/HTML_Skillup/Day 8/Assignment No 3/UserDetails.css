@@ -1,0 +1,102 @@
+/*set font and background-color to body*/
+body{
+	background-image : url(back.jpg);
+	color: #795548;
+	font-style: italic;
+	width: auto;
+	
+}
+
+div#inner
+{
+	/* text align and width to inner div */
+	max-width: 400px;
+	text-align: center;
+	background-color : #f2f2f2;
+	max-height: 850px;
+
+}
+/*set minimum and maximum height to textarea*/
+textarea
+{
+	max-width:200px;
+	max-height: 70px;
+	min-height: 30px;
+	min-width: 100px;
+}
+/* chage color of superscript to red */
+sup{
+	color:red;
+}
+/*set font size to label*/
+label
+{
+	font-size: 15px;
+	color: black;
+}
+
+@media only screen 
+and (max-width : 291px) {
+/* if device size is low decrease size of input,textarea,label */
+ input,textarea{
+ 	width:100px;
+ }
+ label{
+ 	font-size:10px;
+ }
+}
+/* rounded and padding, textbox,textarea and select*/
+input[type=text], input[type=email],select {
+	width: 100%;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+input[type=date]{
+	width: 100%;
+	padding: 5px 5px;
+	margin: 8px 0;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+/*se border to list*/
+ul{
+	border:1.5px  solid red;
+	display:inline-block;
+	height: 110px;
+	width:110px;
+}
+
+.btnSize{
+	padding-left: 150px;
+}
+button {
+	padding: 10px 10px;
+	cursor: pointer;
+	color: Black;
+	background-color: #ffbb33;
+	border-radius: 5px;
+	border: none;
+}
+button:hover {
+	background-color: #79554878;
+}
+
+button:active {
+	background-color: #79554878;
+	box-shadow: 0 2px #666;
+	transform: translateY(4px);
+}
+
+

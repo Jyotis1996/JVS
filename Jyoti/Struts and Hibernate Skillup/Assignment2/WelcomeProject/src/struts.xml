@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" extends="struts-default" namespace="/">
+
+		<!-- Interceptor -->
+		<interceptors>
+			<interceptor name="interceptor"
+				class="com.uks.jyoti.struts.common.db.logic.LoginInterceptor">
+			</interceptor>
+		</interceptors>
+
+		<action name="Login"
+			class="com.uks.jyoti.struts.day2.a1.action.LoginAction">
+			<interceptor-ref name="interceptor" />
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- End of Interceptor -->
+
+		<!-- Starting Day 2-3 Config file -->
+		<action name="login"
+			class="com.uks.jyoti.struts.day2.a1.action.WelcomeAction">
+			<result name="success">/jsp/Userlist.jsp</result>
+			<result name="user">/jsp/details.jsp</result>
+			<result name="login">/jsp/Login.jsp</result>
+		</action>
+
+		<action name="logout"
+			class="com.uks.jyoti.struts.day2.a1.action.WelcomeAction" method="logout">
+			<result name="success">/jsp/Login.jsp</result>
+		</action>
+
+		<action name="registeraction"
+			class="com.uks.jyoti.struts.day2.a1.action.RegisterAction" >
+			<result name="success">/jsp/UserAdded.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+		<action name="userlistaction"
+			class="com.uks.jyoti.struts.day2.a1.action.UserListAction">
+			<result name="success">/jsp/Userlist.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+
+		<!-- Edit Action -->
+		<action name="editaction" class="com.uks.jyoti.struts.day2.a1.action.EditAction">
+            <result name="success">/jsp/EditUser.jsp</result>
+        </action>
+		<!-- Update Action -->
+        <action name="updateaction" class="com.uks.jyoti.struts.day2.a1.action.UpdateAction">
+            <result name="success">/jsp/UpdateSuccess.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+		<!-- User Details -->
+         <action name="detailaction" class="com.uks.jyoti.struts.day2.a1.action.DetailAction">
+            <result name="success">/jsp/detail.jsp</result>
+        </action>
+         <!-- normal User Details -->
+        <action name="userInfoOnly"
+			class="com.uks.jyoti.struts.day2.a1.action.EditAction">
+			<result name="success">/jsp/details.jsp</result>
+			<result name="login">/jsp/Login.jsp</result>
+		</action>
+		<!-- Delete Action -->
+		<action name="deleteaction" class="com.uks.jyoti.struts.day2.a1.action.DeleteAction">
+            <result name="success" type="chain" >userlistaction</result>
+        </action>
+
+	</package>
+</struts>

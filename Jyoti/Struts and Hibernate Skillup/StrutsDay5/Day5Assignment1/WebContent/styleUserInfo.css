@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+.table1 {
+	border-width: 2px;
+	border-style: solid;
+	margin-left: 380px;
+	margin-top: 30px;
+	font-family: MV Boli;
+	border-spacing: 10px;
+	align: center;
+}
+
+th {
+	border-width: 1px;
+	border-style: solid;
+	font-style: italic;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+label {
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: grey;
+	color: white;
+}
+body{
+	background-color: wheat;
+}
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 9px;
+}
+.button2 {
+    background-color: #f44336;
+}
+.size{
+	height: 20px;
+	width:170px;
+}
+.size1{
+	width:52px;
+}
+input[type=text]:focus,textarea:focus {
+    border: 3px solid #555;
+}
+p{
+	color: red;
+	height:10px;
+	width: auto;
+}
+b{
+color: red;
+}
+h1{
+	margin-left: 20px;
+	margin-top: 50px ;
+	font-family: MV Boli;
+
+}

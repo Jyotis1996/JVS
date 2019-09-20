@@ -1,0 +1,31 @@
+body 
+{
+	background-image:url("nature.jpg");
+}
+div
+{
+padding:80px;
+align:"center";
+padding-left: 500px;
+}
+
+.table2
+{
+align:"center";
+padding:15px;
+padding-left:60px;
+}
+label {
+color: #0000FF;
+}
+
+.button{
+	text-align: center;
+	margin: 5px 0;
+	background-color: #ffcccc;
+	border-radius: 12px;
+}
+
+#rcorners {
+  border-radius: 15px 50px;
+} 

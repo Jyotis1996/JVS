@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="connection.url">jdbc:mysql://172.16.1.15:3306/northwind_jyoti</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.username">jyoti</property>
+		<property name="connection.password">jyoti@741</property>
+
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<mapping class="com.uks.assignment1.bean.UserDataBean" />
+	</session-factory>
+
+</hibernate-configuration>

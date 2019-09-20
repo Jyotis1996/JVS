@@ -1,0 +1,147 @@
+<!--
+Assignment No 2 :index.html
+@author : Jyoti
+@created date :05/08/2019 -->
+<!Doctype html>
+<html>
+  <head>
+    <title>Tourism</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="stylesheet.css">
+   </head>
+   <script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+  <body>
+  <!-- Display image and its information one after another-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- Header -->
+	<header  >
+		<h1 id = "rcorners2" style = "background-color:#ca284b"><center>Explore India!!!!!</center><img src="img/travel.jpg" style="width:100px;height:100px;"></h1>
+    </header>
+    <section class="section-content" id="section">
+      <article>
+		<h3 id="waterfalls">WaterFalls</h3>
+		<table>
+          <tr><th><b>1. DudhSagar Falls</b></th>
+            <td width="200px">
+              	<img src="img/Dudhsagarfalls.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Dudhsagar Falls (literally Sea of Milk) is a four-tiered waterfall located on the Mandovi River in the Indian state of Goa.</p></td>
+          </tr>
+          <tr><th><b>2. Gokak Falls</b></th>
+            <td width="200px">
+                <img src="img/Gokakfalls.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>The Gokak Falls is a waterfall located on the Ghataprabha River in Belagavi 
+			                      <br>district of Karnataka, India.There is a hanging bridge across the river, measuring about 201 metres (659 ft).</p></td>
+          </tr>
+          <tr><th><b>3. Nohkalikai Falls</b></th>
+            <td width="200px">
+			    <img src="img/Nohkalikaifalls.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Nohkalikai Falls is the tallest plunge waterfall in India.Its height is 1115 
+			                      <br>feet (340 metres).The waterfall is located near Cherrapunji, one of the wettest places on Earth.</p></td>
+          </tr>
+          <tr><th><b>4. Jog Falls</b></th>
+            <td width="200px">
+                <img src="img/JogFalls.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>It is the 2nd highest waterfalls in India</p></td>
+          </tr>
+        </table>
+
+		<h3 id="monuments">Monuments</h3>
+		<table>
+          <tr><th><b>1. Taj Mahal</b></th>
+            <td width="200px">
+              	<img src="img/tajmahal.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.</p></td>
+          </tr>
+          <tr><th><b>2. Gol Gumbaz</b></th>
+            <td width="200px">
+                <img src="img/Golgumbaz.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Running around the inside of the dome is the whispering gallery where even 
+			                      <br>the softest sound can be heard on the other side of the mausoleum due to the acoustics of the space.</p></td>
+          </tr>
+          <tr><th><b>3. Qutub Minar</b></th>
+            <td width="200px">
+			    <img src="img/Qutubminar.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Qutub Minar is a 73-metre (239.5 feet) tall tapering tower of five storeys in Delhi, with a 14.3  
+			                      <br>metres (47 feet) base diameter,reducing to 2.7 metres (9 feet) at the top of the peak.</p></td>
+          </tr>
+          <tr><th><b>4. Gateway Of India</b></th>
+            <td width="200px">
+                <img src="img/IndiaGate.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>The India Gate is a war memorial located astride the Rajpath, on the eastern edge of the 
+			                      <br>"ceremonial axis" of New Delhi, India, formerly called Kingsway.</p></td>
+          </tr>
+        </table>
+
+		<h3 id="forts">Forts</h3>
+		<table>
+          <tr><th><b>1. Red Fort</b></th>
+            <td width="200px">
+              	<img src="img/RedFort.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>The Red Fort is a historic fort in the city of Delhi in India. Every year on the Independence day 
+								  <br>of India,the Prime Minister hoists the Indian "tricolour flag" at the main gate of the fort.</p></td>
+          </tr>
+          <tr><th><b>2. Gwalior Fort</b></th>
+            <td width="200px">
+                <img src="img/Gwaliorfort.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Gwalior Fort is a hill fort near Gwalior, Madhya Pradesh, central India.The fort has existed since the 10th century.</p></td>
+          </tr>
+          <tr><th><b>3. Sindhudurg Fort</b></th>
+            <td width="200px">
+			    <img src="img/Sindhudurg.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Sindhudurg Fort is a historical fort that occupies an islet in the Arabian Sea, just off the coast of Maharashtra in Western India.</p></td>
+          </tr>
+        </table>
+		<h3 id="nationalparks">National Parks</h3>
+		<table>
+          <tr><th><b>1. Jim Corbett National Park</b></th>
+            <td width="200px">
+              	<img src="img/JimCorbett.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Jim Corbett National Park is a forested wildlife sanctuary in northern India’s Uttarakhand State. 
+								 Rich in flora and fauna, it’s known for its Bengal tigers.Animals, including tigers, leopards and wild elephants.</p></td>
+          </tr>
+          <tr><th><b>2. Bandipur National Park</b></th>
+            <td width="200px">
+                <img src="img/Bandipur.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Bandipur National Park established in 1974 as a tiger reserve under Project Tiger, is a national park located in the Indian state of Karnataka, 
+			                      which is the state with the second highest tiger population in India.</p></td>
+          </tr>
+          <tr><th><b>3. Kazirnaga National Park</b></th>
+            <td width="200px">
+			    <img src="img/Kaziranga.jpg"style="width:150px;height:150px;" alt="Notebook"/>
+            </td><td align="left"><p>Kaziranga National Park is a national park in the Golaghat and Nagaon districts of the state of Assam, India. 
+			The sanctuary, which hosts two-thirds of the world's great one-horned rhinoceroses, is a World Heritage Site.</p></td>
+          </tr>
+        </table>
+      </article>
+    </section>
+	<!-- Side panel to go to particular section-->
+    <aside class="section-content" id="aside">
+      <h2>Places</h2>
+      <p><a href="#waterfalls">WaterFalls</a></p>
+      <p><a href="#monuments">Monuments</a></p>
+      <p><a href="#forts">Forts</a></p>
+	  <p><a href="#nationalparks">National Parks</a></p>
+    </aside>
+	<!--Footer-->
+	<footer>
+      <h5><center>Indian Tourism pvt limited. Copyright © All rights reserved<center></h5>
+    </footer>
+  </body>
+</html>

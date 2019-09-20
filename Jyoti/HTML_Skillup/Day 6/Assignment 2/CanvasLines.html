@@ -1,0 +1,27 @@
+<!--Assignment 2.2 : CanvasLines.html
+@author name : Jyoti Shirahatti
+@created date : 05/08/2019-->
+<!DOCTYPE html>
+<html>
+<body>
+    <center>
+        <h2>HTML5 Canvas Lines</h2>
+        <canvas id="myCanvas" width="250" height="250" style="border:1px solid #c671aa">
+            Your browser does not support the HTML5 canvas tag.</canvas>                        
+    </center>
+<script>
+var c = document.getElementById("myCanvas");
+var can = c.getContext("2d");
+//Adding Verticale line and thickness of lines is incresing order
+for(var i=1;i<=12;i++){
+    can.beginPath();
+    can.moveTo(20*i,20);
+    can.lineTo(20*i,180);
+    can.stroke();
+    can.lineWidth = 2 + i;
+    //Width of line incresing
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: Violet;
+	font-style: italic;
+}
+
+font{
+	color : #800080;
+}
+
+b{
+	color : #C71585
+}
